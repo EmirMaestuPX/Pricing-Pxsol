@@ -1,0 +1,143 @@
+.btn-danger{
+    background-color: #cc0303;
+}
+.btn-outline-danger:hover{
+    background-color: #cc0303;
+}
+.fa-check{
+    color: #5096F1;
+
+}
+ul {
+    display: flex;
+    top: 0px;
+    z-index: 10;
+    padding-bottom: 14px;
+}
+li {
+    list-style: none;
+    flex: 1;
+}
+
+li.active button {
+    background: #f5f5f5;
+    color: #000;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+th {
+    background: #f5f5f5;
+    display: none;
+}
+td,
+th {
+    height: 53px;
+}
+td,
+th {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    empty-cells: show;
+}
+td,
+th {
+    text-align: left;
+}
+td + td,
+th + th {
+    text-align: center;
+    display: none;
+}
+td.default {
+    display: table-cell;
+}
+.sep {
+    font-weight: 700;
+    color: #cc0303;
+    font-size: 1.5rem;
+}
+.txt-l {
+    font-size: 28px;
+    font-weight: bold;
+}
+.txt-top {
+    position: relative;
+    top: -9px;
+    left: -2px;
+}
+.hide {
+    border: 0;
+    background: none;
+}
+
+@media (min-width: 800px) {
+    .tablas-pricing {
+        display: none;
+    }
+    td,
+    th {
+        display: table-cell !important;
+    }
+    td,
+    th {
+        width: 330px;
+    }|
+    td + td,
+    th + th {
+        width: auto;
+    }
+}
+
+@media (max-width:768px) {
+    .table-pricing-top{
+        display: none;
+    }
+}
+
+.tablas-pricing > .row {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.tablas-pricing > .row > .col-4 {
+    display: inline-block;
+    width: 80%;
+}
+.tablas-pricing ul.list-unstyled.mt-3.mb-4 {
+    display: block;
+}
+.card-header h2{
+    font-weight: 200;
+    font-size: 2.7rem;
+}
+.card-header span{
+    font-weight: 400;
+}
+.card-body {
+    white-space: initial !important;
+}
+.card-body h4{
+    font-weight: 700;
+    color: #cc0303;
+    font-size: 1.8rem;
+}
+.card-body li{
+    color: #a5a5a5;
+}
+.card-top-pricing{
+    height: 450px;
+}
+
+.card-top-pricing .card-body button{
+    position: absolute;
+    bottom: 30px;
+    margin: 0 auto;
+}
+.btn-pricing-top{
+    display: flex;
+    justify-content: center;
+}
+
