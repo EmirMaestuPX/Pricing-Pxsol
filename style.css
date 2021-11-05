@@ -97,14 +97,20 @@ td.default {
     }
 }
 
-.tablas-pricing > .row {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-}
 .tablas-pricing > .row > .col-4 {
     display: inline-block;
     width: 80%;
+}
+
+.card-table-container {
+    max-height: 0;
+    transition: .5s ease-out;
+    opacity: 0;
+    width: 100%;
+}
+.card-table-container.active {
+    max-height: 200vh;
+    opacity: 1;
 }
 .tablas-pricing ul.list-unstyled.mt-3.mb-4 {
     display: block;
