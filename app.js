@@ -1,9 +1,10 @@
 let mediaQuery = window.matchMedia('(min-width: 800px)');
 
-console.log('mq',mediaQuery);
+console.log('mq', mediaQuery);
 $('.tablas-pricing').on('click', '.card-li-container', function (e) {
     e.preventDefault();
     let pos = $(this).index() + 2;
+    console.log('pos', this, pos);
     let containerEl = $(this);
     // console.log(pos);
     $('tr').find('td:not(:eq(0))').hide();
@@ -11,10 +12,12 @@ $('.tablas-pricing').on('click', '.card-li-container', function (e) {
     $('tr').find('th:not(:eq(0))').hide();
     $('li').removeClass('active');
     $(this).addClass('active');
-    if ( !mediaQuery.matches ) {
+    if (!mediaQuery.matches) {
         if (!$(this).find('#tabla-general').length) {
             console.log('desired Container', containerEl);
-            $('#tabla-general').detach().appendTo($(containerEl).find('.card-table-container'));
+            $('#tabla-general')
+                .detach()
+                .appendTo($(containerEl).find('.card-table-container'));
             $('.card-table-container').removeClass('active');
             $(containerEl).find('.card-table-container').addClass('active');
             $('#tabla-general').show();
@@ -24,11 +27,9 @@ $('.tablas-pricing').on('click', '.card-li-container', function (e) {
     }
 });
 
-
 mediaQuery.addListener(doSomething);
 
 function doSomething(mediaQuery) {
-    
     if (mediaQuery.matches) {
         $('.sep').attr('colspan', 5);
     } else {
@@ -38,6 +39,30 @@ function doSomething(mediaQuery) {
 }
 doSomething(mediaQuery);
 
-$('.alternar').click(function () {
-    $('.prueba').toggle();
+$(document).ready(function () {
+    $('tr.parent')
+        .css('cursor', 'pointer')
+        .attr('title', 'Click to expand/collapse')
+        .click(function () {
+            $(this)
+                .siblings('.child-' + this.id)
+                .toggle();
+        });
+    // $('tr[@class^=child-]').hide().children('td');
+});
+
+$(".pushme").click(function () {
+    $(this).text(function(i, v){
+       return v === 'Mostrar menos' ? 'Mostrar más' : 'Mostrar menos'
+    })
+});
+
+
+
+// popvers bootstrap
+var popoverTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="popover"]')
+);
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl);
 });

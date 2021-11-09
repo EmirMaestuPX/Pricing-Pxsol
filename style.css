@@ -1,3 +1,4 @@
+/* general */
 .btn-danger{
     background-color: #cc0303;
 }
@@ -6,7 +7,43 @@
 }
 .fa-check{
     color: #5096F1;
-
+    font-size: 1.2rem;
+}
+.btn-desple-table a{
+    color: #cc0303;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.fa-times{
+    color: #cc0303;
+    font-size: 1.2rem;
+}
+.container-title{
+    background-color: #f9f9f9;
+    margin-top: 5rem;
+    border-radius: 14px;
+    padding-bottom: 10rem;
+}
+.container-title h1{
+    padding-top: 10rem;
+    color: #cc0303;
+    font-size: 3.3rem;
+    font-weight: 600;
+}
+.container-title p{
+    font-size: 1.5rem;
+}
+.table-pricing-top{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -5rem;
+}
+.table-pricing-top .col:nth-child(2){
+    margin-top: -1rem;
+    height: 600px;
+}
+.table-pricing-top button{
+    font-size: .8rem;
 }
 ul {
     display: flex;
@@ -26,10 +63,9 @@ li.active button {
 table {
     border-collapse: collapse;
     table-layout: fixed;
-    width: 100%;
 }
 th {
-    background: #f5f5f5;
+    /* background: #f5f5f5; */
     display: none;
 }
 td,
@@ -51,6 +87,9 @@ th + th {
     text-align: center;
     display: none;
 }
+tr td{
+    color: #848199;
+}
 td.default {
     display: table-cell;
 }
@@ -58,6 +97,8 @@ td.default {
     font-weight: 700;
     color: #cc0303;
     font-size: 1.5rem;
+    padding-top: 2rem;
+    text-transform: uppercase;
 }
 .txt-l {
     font-size: 28px;
@@ -73,7 +114,8 @@ td.default {
     background: none;
 }
 
-@media (min-width: 800px) {
+
+@media (min-width: 1186px) {
     .tablas-pricing {
         display: none;
     }
@@ -89,12 +131,76 @@ td.default {
     th + th {
         width: auto;
     }
+    .dos-col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      
+      .dos-col > div {
+        width: 50%;
+        text-align: end;
+      }
+      .dos-col > div:last-child {
+        width: 40%;
+        color: #848199;
+        font-size: .8rem;
+        margin-left: .7rem;
+        text-align: start;
+      }
+      table{
+        background: #f5f5f5;
+    }
 }
 
-@media (max-width:768px) {
+@media (max-width:1186px) {
+    
     .table-pricing-top{
         display: none;
     }
+    .container-title h1{
+        padding-top: 4rem;
+        color: #cc0303;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .container-title{
+        background-color: #f9f9f9;
+        margin-top: 5rem;
+        border-radius: 14px;
+        padding-bottom: 3rem;
+    }
+    .card-body{
+        padding: 0!important;
+    }
+    table {
+        width: 100%;
+    }
+    .tablas-pricing > .row > .col-4{
+        width: 100%!important;
+    }
+    .dos-col {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      
+      .dos-col > div {
+        width: 100%;
+        text-align: center;
+      }
+      .dos-col > div:last-child {
+        width: 100%;
+        text-align: center;
+        color: #848199;
+        font-size: .8rem;
+        margin-left: .7rem;
+      }
+      .btn-desple-table{
+          display: none;
+      }
 }
 
 .tablas-pricing > .row > .col-4 {
@@ -121,6 +227,12 @@ td.default {
 }
 .card-header span{
     font-weight: 400;
+    font-size: .85rem;
+}
+.card-header h2 small{
+    font-weight: 100;
+    color: #a5a5a5;
+    font-size: 1.5rem;
 }
 .card-body {
     white-space: initial !important;
@@ -132,6 +244,8 @@ td.default {
 }
 .card-body li{
     color: #a5a5a5;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 .card-top-pricing{
     height: 450px;
@@ -147,3 +261,17 @@ td.default {
     justify-content: center;
 }
 
+
+.card-table-container {
+    max-height: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+}
+.card-table-container table{
+    border-collapse: collapse;
+}
+.card-table-container.active{
+    max-height: 650vh;
+    transition: max-height 0.6s, padding 0.6s;
+}
