@@ -1,10 +1,10 @@
 let mediaQuery = window.matchMedia('(min-width: 1200px)');
 
-console.log('mq', mediaQuery);
+// console.log('mq', mediaQuery);
 $('.tablas-pricing').on('click', '.card-li-container', function (e) {
     e.preventDefault();
     let pos = $(this).index() + 2;
-    console.log('pos', this, pos);
+    // console.log('pos', this, pos);
     let containerEl = $(this);
     // console.log(pos);
     $('tr').find('td:not(:eq(0))').hide();
@@ -14,7 +14,7 @@ $('.tablas-pricing').on('click', '.card-li-container', function (e) {
     $(this).addClass('active');
     if (!mediaQuery.matches) {
         if (!$(this).find('#tabla-general').length) {
-            console.log('desired Container', containerEl);
+            // console.log('desired Container', containerEl);
             $('#tabla-general')
                 .detach()
                 .appendTo($(containerEl).find('.card-table-container'));
