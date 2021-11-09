@@ -1,4 +1,4 @@
-let mediaQuery = window.matchMedia('(min-width: 800px)');
+let mediaQuery = window.matchMedia('(min-width: 1200px)');
 
 console.log('mq', mediaQuery);
 $('.tablas-pricing').on('click', '.card-li-container', function (e) {
@@ -53,7 +53,7 @@ $(document).ready(function () {
 
 $(".pushme").click(function () {
     $(this).text(function(i, v){
-       return v === 'Mostrar menos' ? 'Mostrar más' : 'Mostrar menos'
+       return v === 'Mostrar menos -' ? 'Mostrar más +' : 'Mostrar menos -'
     })
 });
 

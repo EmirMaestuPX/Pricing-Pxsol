@@ -149,8 +149,9 @@ td.default {
         margin-left: .7rem;
         text-align: start;
       }
-      table{
-        background: #f5f5f5;
+      .container-table{
+        background: #F9F9F9;
+        padding: 3rem;
     }
 }
 
@@ -196,7 +197,7 @@ td.default {
         text-align: center;
         color: #848199;
         font-size: .8rem;
-        margin-left: .7rem;
+        /* margin-left: .7rem; */
       }
       .btn-desple-table{
           display: none;
