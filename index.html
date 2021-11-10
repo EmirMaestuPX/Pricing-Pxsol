@@ -29,15 +29,23 @@
             <p>Elige tu plan luego</p>
             <button class="btn btn-danger mt-3">PROBAR PXSOL GRATIS</button>
         </div>
+        <div class="container">
+
+            <div class="radio">
+                <p>Seleccione su moneda: </p>
+                <input label="USD" class="pago shadow" type="radio" id="usd" name="price" value="opc" checked>
+                <input label="ARS" class="pago shadow" type="radio" id="ars" name="price" value="opc2">
+            </div>
+        </div>
 
         <div class="container justify-content-center table-pricing-top">
             <div class=" row row-cols-1 row-cols-md-4 mb-3 text-start">
                 <div class="col">
                     <div class="card mb-4 shadow-sm border-0 card-top-pricing">
                         <div class="card-header py-3 bg-white border-0">
-                            <h2 class="card-title pricing-card-title mt-4">$15<small class="">/mes</small>
+                            <h2 class="card-title pricing-card-title mt-4 price-one">$15<small class="">/mes</small>
                             </h2>
-                            <span>* +$1 por noche</span>
+                            <span>* +2% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="my-0">Starter</h4>
@@ -55,9 +63,9 @@
                 <div class="col">
                     <div class="card mb-4 shadow border-0 card-top-pricing">
                         <div class="card-header py-3 bg-white border-0">
-                            <h2 class="card-title pricing-card-title mt-4">$60<small class="">/mes</small>
+                            <h2 class="card-title pricing-card-title mt-4 price-full">$60<small class="">/mes</small>
                             </h2>
-                            <span>* +$1 por reserva</span>
+                            <span>* +1% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="my-0">Full</h4>
@@ -67,7 +75,8 @@
                                     variable acorde a tus ventas.</li>
                             </ul>
                             <div class="btn-pricing-top">
-                                <button type="button" class="w-75 btn btn-outline-danger">OBTENER 14 DÍAS GRATIS</button>
+                                <button type="button" class="w-75 btn btn-outline-danger">OBTENER 14 DÍAS
+                                    GRATIS</button>
                             </div>
                         </div>
                     </div>
@@ -76,8 +85,9 @@
                     <div class="card mb-4 shadow-lg border-0 card-top-pricing">
                         <div class="card-header py-3 bg-white border-0">
                             <h3 class="text-end badge-popular"><span class="badge">MAS POPULAR</span></h3>
-                            <h2 class="card-title pricing-card-title mt-4">$120<small class="">/mes</small></h2>
-                            <span>*+$0 por noche procesada en Pxsol</span>
+                            <h2 class="card-title pricing-card-title mt-4 price-pro">$120<small class="">/mes</small>
+                            </h2>
+                            <span>* +0,5% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="my-0">Professional</h4>
@@ -95,8 +105,9 @@
                 <div class="col">
                     <div class="card mb-4 shadow-sm border-0 card-top-pricing">
                         <div class="card-header py-3 bg-white border-0">
-                            <h2 class="card-title pricing-card-title mt-4">$250<small class="">/mes</small></h2>
-                            <span>*+$0 por noche procesada en Pxsol</span>
+                            <h2 class="card-title pricing-card-title mt-4 price-enter">$250<small class="">/mes</small>
+                            </h2>
+                            <span>* +0,5% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="my-0">Enterprise</h4>
@@ -119,7 +130,9 @@
                 <li class="col-4 card-li-container">
                     <div class="card text-dark mb-4 shadow-sm text-start p-4">
                         <div class="card-header bg-white border-0 py-3">
-                            <h2 class="card-title pricing-card-title">$15<small class="text-muted">/mes</small></h2>
+                            <h2 class="card-title pricing-card-title price-one">$15<small
+                                    class="text-muted">/mes</small></h2>
+                            <span>* +2% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title pricing-card-title">Starter</h4>
@@ -144,7 +157,9 @@
                 <li class="col-4 card-li-container">
                     <div class="card text-dark mb-4 shadow-sm text-start p-4">
                         <div class="card-header bg-white border-0 py-3">
-                            <h2 class="card-title pricing-card-title">$60<small class="text-muted">/mes</small></h2>
+                            <h2 class="card-title pricing-card-title price-full">$60<small
+                                    class="text-muted">/mes</small></h2>
+                            <span>* +1% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title pricing-card-title">Full</h4>
@@ -170,7 +185,9 @@
                     <div class="card text-dark mb-4 shadow-sm text-start p-4">
                         <div class="card-header bg-white border-0 py-3">
                             <h3 class="text-end badge-popular"><span class="badge">MAS POPULAR</span></h3>
-                            <h2 class="card-title pricing-card-title">$120<small class="text-muted">/mes</small></h2>
+                            <h2 class="card-title pricing-card-title price-pro">$120<small
+                                    class="text-muted">/mes</small></h2>
+                            <span>* +0,5% por reserva</span>
                         </div>
                         <div class="card-body p-0">
                             <h4 class="card-title pricing-card-title">Professional</h4>
@@ -195,7 +212,9 @@
                 <li class="col-4 card-li-container">
                     <div class="card text-dark mb-4 shadow-sm text-start p-4">
                         <div class="card-header bg-white border-0 py-3">
-                            <h2 class="card-title pricing-card-title">$250<small class="text-muted">/mes</small></h2>
+                            <h2 class="card-title pricing-card-title price-enter">$250<small
+                                    class="text-muted">/mes</small></h2>
+                            <span>* +0,5% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title pricing-card-title">Enterprise</h4>
@@ -221,8 +240,8 @@
         </div>
 
         <div class="btn-desple-table text-center mb-5">
-            <a class="btn-desple-table-a" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                aria-controls="collapseExample">+ Mostrar características del plan</a>
+            <a class="btn-desple-table-a" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">+ Mostrar características del plan</a>
         </div>
 
         <div class="collapse" id="collapseExample">
@@ -236,7 +255,7 @@
                                     <div class="card border-0 text-dark mb-4 shadow-sm text-start">
                                         <div class="card-header bg-white border-0">
                                             <h4 class="card-title pricing-card-title pt-5">Starter</h4>
-                                            <h2 class="card-title pricing-card-title">$15<small
+                                            <h2 class="card-title pricing-card-title price-one">$15<small
                                                     class="text-muted">/mes</small></h2>
                                         </div>
                                         <div class="card-body">
@@ -253,7 +272,26 @@
                                     <div class="card border-0 text-dark mb-4 shadow-sm text-start">
                                         <div class="card-header bg-white border-0">
                                             <h4 class="card-title pricing-card-title pt-5">Full</h4>
-                                            <h2 class="card-title pricing-card-title">$60<small
+                                            <h2 class="card-title pricing-card-title price-full">$60<small
+                                                    class="text-muted">/mes</small></h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <button style="font-size: .7rem;" type="button"
+                                                class="w-100 btn btn-outline-danger">OBTENER 14
+                                                DÍAS
+                                                GRATIS</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </th>
+                            <th class="bg-blue">
+                                <li class="card-li-container">
+                                    <div class="card border-0 text-dark mb-4 shadow-sm text-start">
+                                        <div class="card-header bg-white border-0">
+                                            <h3 class="text-end badge-popular"><span class="badge">MAS POPULAR</span>
+                                            </h3>
+                                            <h4 class="card-title pricing-card-title pt-5">Professional</h4>
+                                            <h2 class="card-title pricing-card-title price-pro">$120<small
                                                     class="text-muted">/mes</small></h2>
                                         </div>
                                         <div class="card-body">
@@ -269,26 +307,8 @@
                                 <li class="card-li-container">
                                     <div class="card border-0 text-dark mb-4 shadow-sm text-start">
                                         <div class="card-header bg-white border-0">
-                                            <h3 class="text-end badge-popular"><span class="badge">MAS POPULAR</span></h3>
-                                            <h4 class="card-title pricing-card-title pt-5">Professional</h4>
-                                            <h2 class="card-title pricing-card-title">$120<small
-                                                    class="text-muted">/mes</small></h2>
-                                        </div>
-                                        <div class="card-body">
-                                            <button style="font-size: .7rem;" type="button"
-                                                class="w-100 btn btn-outline-danger">OBTENER 14
-                                                DÍAS
-                                                GRATIS</button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </th>
-                            <th class="bg-blue">
-                                <li class="card-li-container">
-                                    <div class="card border-0 text-dark mb-4 shadow-sm text-start">
-                                        <div class="card-header bg-white border-0">
                                             <h4 class="card-title pricing-card-title pt-5">Enterprise</h4>
-                                            <h2 class="card-title pricing-card-title">$250<small
+                                            <h2 class="card-title pricing-card-title price-enter">$250<small
                                                     class="text-muted">/mes</small></h2>
                                         </div>
                                         <div class="card-body">
@@ -302,7 +322,7 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody >
+                    <tbody>
                         <tr style="padding-top: 100rem;">
                             <td colspan="5" class="sep">PMS</td>
                         </tr>
@@ -388,7 +408,9 @@
                             <td colspan="5" class="sep">Motor de reservas</td>
                         </tr>
                         <tr>
-                            <td>Tarifario <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Configura diferentes tarifas para satisfacer las necesidades de más huéspedes"><i
+                            <td>Tarifario <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="Configura diferentes tarifas para satisfacer las necesidades de más huéspedes"><i
                                         class="far fa-question-circle"></i></a></td>
                             <td>
                                 <div class="dos-col">
@@ -442,7 +464,8 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr>
-                            <td>Medios de pago <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Medios de pago <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Ofrece a tus huéspedes múltiples formas de pago al reservar."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -456,7 +479,8 @@
                                 + Mostrar más</td>
                         </tr>
                         <tr class="child-row2 features border-bottom" style="display: none;">
-                            <td>Mercado Pago <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Mercado Pago <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Disponible para Argentina, Chile, México y Perú."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -485,7 +509,8 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr class="child-row2 features border-bottom" style="display: none;">
-                            <td>Web Check In <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Web Check In <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Posibilidad de que tus huéspedes realicen el check in de manera online, sencilla y segura."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td>
@@ -545,7 +570,8 @@
                             <td colspan="5" class="sep">Channel manager</td>
                         </tr>
                         <tr>
-                            <td>Canales de venta <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Canales de venta <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Conecta tu hotel con las agencias de viaje online (OTA) con mayor rentabilidad del mundo."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td>
@@ -590,7 +616,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Reglas entre habitaciones <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Reglas entre habitaciones <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Cantidad de medios de pago aceptados en tu motor."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -599,7 +626,8 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr>
-                            <td>Reglas entre tarifarios <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Reglas entre tarifarios <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Aumente o disminuya valores fijos o porcentuales entre tarifarios."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -628,7 +656,8 @@
                             <td colspan="5" class="sep">Página web</td>
                         </tr>
                         <tr>
-                            <td>Asesor de diseño gráfico <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Asesor de diseño gráfico <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Un especialista a tu disposición para ayudarte a optimizar tu diseño y estilo de tu sitio."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -662,7 +691,8 @@
                                 + Mostrar más</td>
                         </tr>
                         <tr class="child-row4 features border-bottom" style="display: none;">
-                            <td>Web mobile <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Web mobile <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Tu página adaptada a todos los dispositivos."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -691,8 +721,8 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr class="child-row4 features border-bottom" style="display: none;">
-                            <td>Dominio de cortesía <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
-                                    data-bs-content="Obtén un dominio de regalo."><i
+                            <td>Dominio de cortesía <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus" data-bs-content="Obtén un dominio de regalo."><i
                                         class="far fa-question-circle"></i></a>
                             </td>
                             <td><i class="fas fa-times"></i></td>
@@ -701,7 +731,8 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr class="child-row4 features border-bottom" style="display: none;">
-                            <td>Blog <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Blog <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Una herramienta para mantener tu web actualizada y mejorar el posicionamiento orgánico de la misma."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-times"></i></td>
@@ -926,7 +957,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Plantillas de correo <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Plantillas de correo <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Para que no pierdas tiempo en el envío de mails, trabaja con plantillas ya establecidas."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -947,7 +979,8 @@
                                 + Mostrar más</td>
                         </tr>
                         <tr class="child-row6 features" style="display: none;">
-                            <td>Generador de presupuestos <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Generador de presupuestos <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Cuando entre una consulta a tu bandeja de entrada, podrás enviar, de manera automática la respuesta con tus tarifas en tiempo real."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -956,7 +989,8 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr class="child-row6 features" style="display: none;">
-                            <td>Email marketing <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Email marketing <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Crea campañas por correo que lleguen a toda tu base de datos."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td>
@@ -1011,7 +1045,8 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr class="child-row6 features" style="display: none;">
-                            <td>Email automation <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Email automation <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Automatiza el envío y respuestas de tus mails para ahorrar tiempo y entregar la mejor experiencia."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-times"></i></td>
@@ -1092,7 +1127,8 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr>
-                            <td>Reservas <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Reservas <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Informe para obtener los datos de cada una de tus reservas."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -1101,7 +1137,8 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr>
-                            <td>Búsquedas no exitosas <a type="button" class="text-danger" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                            <td>Búsquedas no exitosas <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
                                     data-bs-content="Para entender qué cantidad de usuarios estan interesados en reservar en tu hotel pero no pudieron hacerlo por falta de disponibilidad."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
@@ -1202,7 +1239,78 @@
 
             </div>
         </div>
-
+        <div class="container preguntas-fre">
+            <h2>Preguntas frecuentes</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" style="font-size: 1.1rem;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                            aria-controls="collapseOne">
+                            ¿Cuánto dura el contrato?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start text-muted mx-2">
+                            Ofrecemos uno de los contratos más flexibles. Después de los 12 meses iniciales, y en caso
+                            lo desees, podrás dar de baja el servicio con tu cuenta al día y una notificación previa 30
+                            días..
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" style="font-size: 1.1rem;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            ¿Puedo cambiar de plan durante el contrato?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start text-muted mx-2">
+                            Claro! Las necesidades de tu hotel pueden variar a medida se desarrolla. Para que cuentes
+                            con las herramientas necesarias para cada etapa, podrás cambiar de plan cuando lo necesites.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" style="font-size: 1.1rem;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            ¿Cómo sé qué plan se adapta más a mis necesidades?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start text-muted mx-2">
+                            Para ayudarte, nos gustaría conocer los objetivos y desafíos de tu hotel. Con ellos en
+                            mente, podremos indicar qué plan es el adecuado para tu propiedad. <a
+                                href="https://www.pxsol.com/contacto?hsLang=es" style="color: #cc0303;">Puedes agendar
+                                una reunión online aquí.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" style="font-size: 1.1rem;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            ¿Cómo sé qué plan se adapta más a mis necesidades?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start text-muted mx-2">
+                            Puedes realizar tus pagos con tarjeta a través de Stripe en ambos planes. O con
+                            transferencia bancaria en el plan Professional.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

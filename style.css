@@ -24,7 +24,7 @@
     background-color: #f9f9f9;
     margin-top: 5rem;
     border-radius: 14px;
-    padding-bottom: 10rem;
+    padding-bottom: 15rem;
 }
 .card{
     border-radius: 10px;
@@ -205,7 +205,7 @@ td.default {
         background-color: #f9f9f9;
         margin-top: 5rem;
         border-radius: 14px;
-        padding-bottom: 3rem;
+        padding-bottom: 9rem;
     }
     .card-header{
         padding: 0;
@@ -320,4 +320,93 @@ td.default {
 .card-table-container.active{
     max-height: 650vh;
     transition: max-height 0.6s, padding 0.6s;
+}
+
+.radio {
+	padding: 4px;
+    margin-top: -10rem;
+    margin-left: 3rem;
+    margin-bottom: 6rem;
+	position: relative;
+}
+
+.radio input {
+	width: auto;
+	height: 100%;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 4px 8px;
+	color: #bdbdbdbd;
+	font-size: 14px;
+	transition: all 100ms linear;
+}
+.radio span{
+    margin-bottom: 1rem;
+}
+.radio input:checked {
+	background-color: #cc0303;
+	color: #fff;
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #79485f7a;
+    border: none;
+}
+.radio input {
+    background-color: #fff;
+    width: 100px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #f3f3f3;
+}
+
+.radio input:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+@media (max-width:1200px) {
+    .radio{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+.preguntas-fre{
+    text-align: center;
+    margin-top: 6rem;
+    background-color: #f9f9f9;
+    padding: 3rem;
+}
+.preguntas-fre h2{
+    color: #cc0303;
+    font-size: 2.3rem;
+}
+.accordion-button{
+    background-color: #f9f9f9;
+}
+.accordion-button:not(.collapsed) {
+    color: #222;
+    /* border: none; */
+    background-color: #f9f9f9;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-item{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #f9f9f9;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
 }
