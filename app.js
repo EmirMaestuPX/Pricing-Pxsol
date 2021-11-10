@@ -53,11 +53,20 @@ $(document).ready(function () {
 
 $(".pushme").click(function () {
     $(this).text(function(i, v){
-       return v === 'Mostrar menos -' ? 'Mostrar más +' : 'Mostrar menos -'
+       return v === '- Mostrar menos' ? '+ Mostrar más' : '- Mostrar menos'
     })
 });
 
-
+$(".btn-desple-table-a").click(function () {
+    $(this).text(function(j, l){
+       return l === '- Ocultar características del plan' ? '+ Mostrar características del plan' : '- Ocultar características del plan'
+    })
+});
+$(".btn-desple-mobile").click(function () {
+    $(this).text(function(p, o){
+       return o === '- Ocultar características del plan' ? '+ Mostrar características del plan' : '- Ocultar características del plan'
+    })
+});
 
 // popvers bootstrap
 var popoverTriggerList = [].slice.call(

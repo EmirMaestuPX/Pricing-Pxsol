@@ -1,6 +1,8 @@
 /* general */
 .btn-danger{
     background-color: #cc0303;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 .btn-outline-danger:hover{
     background-color: #cc0303;
@@ -24,10 +26,16 @@
     border-radius: 14px;
     padding-bottom: 10rem;
 }
+.card{
+    border-radius: 10px;
+}
+.card-header:first-child{
+    border-radius: 10px;
+}
 .container-title h1{
     padding-top: 10rem;
     color: #cc0303;
-    font-size: 3.3rem;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 .container-title p{
@@ -38,9 +46,9 @@
     margin: 0 auto;
     margin-top: -5rem;
 }
-.table-pricing-top .col:nth-child(2){
+.table-pricing-top .col:nth-child(3){
     margin-top: -1rem;
-    height: 600px;
+    height: 500px;
 }
 .table-pricing-top button{
     font-size: .8rem;
@@ -54,11 +62,6 @@ ul {
 li {
     list-style: none;
     flex: 1;
-}
-
-li.active button {
-    background: #f5f5f5;
-    color: #000;
 }
 table {
     border-collapse: collapse;
@@ -100,6 +103,7 @@ td.default {
     padding-top: 2rem;
     text-transform: uppercase;
 }
+
 .txt-l {
     font-size: 28px;
     font-weight: bold;
@@ -115,9 +119,16 @@ td.default {
 }
 
 
-@media (min-width: 1186px) {
+@media (min-width: 1200px) {
     .tablas-pricing {
         display: none;
+    }
+    th{
+        border: none;
+    }
+    th li .card{
+        width: 250px;
+        height: 230px;
     }
     td,
     th {
@@ -152,7 +163,31 @@ td.default {
       .container-table{
         background: #F9F9F9;
         padding: 3rem;
+        border-radius: 14px;
+        width: 93%;
+        margin: 0 auto;
+
     }
+    .row.row-cols-1.row-cols-md-4.mb-3.text-start {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .table-pricing-top .col:nth-child(1){
+        margin-right: -2rem;
+        margin-top: 2rem;
+    }
+    .table-pricing-top .col:nth-child(2){
+        margin-right: -2rem;
+    }
+    .table-pricing-top .col:nth-child(3){
+        z-index: 1;
+    }
+    .table-pricing-top .col:nth-child(4){
+        margin-left: -2rem;
+        margin-top: 2rem;
+    }
+
 }
 
 @media (max-width:1186px) {
@@ -171,6 +206,9 @@ td.default {
         margin-top: 5rem;
         border-radius: 14px;
         padding-bottom: 3rem;
+    }
+    .card-header{
+        padding: 0;
     }
     .card-body{
         padding: 0!important;
@@ -251,7 +289,16 @@ td.default {
 .card-top-pricing{
     height: 450px;
 }
-
+.badge-popular{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.badge-popular span{
+    border-radius: 14px;
+    background-color: #5096F1;
+    font-weight: 500;
+}
 .card-top-pricing .card-body button{
     position: absolute;
     bottom: 30px;
@@ -261,8 +308,6 @@ td.default {
     display: flex;
     justify-content: center;
 }
-
-
 .card-table-container {
     max-height: 0;
     box-sizing: border-box;
