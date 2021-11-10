@@ -303,10 +303,15 @@ td p{
     background-color: #5096F1;
     font-weight: 500;
 }
-.card-top-pricing .card-body button{
+.card-top-pricing .card-body a{
     position: absolute;
     bottom: 30px;
     margin: 0 auto;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn-pricing-top{
     display: flex;
