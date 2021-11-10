@@ -353,6 +353,7 @@ td.default {
     border: none;
 }
 .radio input {
+    margin-right: .3rem;
     background-color: #fff;
     width: 100px;
     font-size: 1rem;
