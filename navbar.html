@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Syahrizaldev">
+	<title>Responsive Mega Menu using Vanilla JavaScript</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/reset.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
+</head>
+
+<body>
+	<!-- Section: Header -->
+	<header class="header navbarPxsol">
+		<div class="top-nav">
+			<div class="top-nav-items d-none d-sm-none d-md-block container">
+				<a
+					href="https://auth0.pxsol.com/u/login?state=hKFo2SBxY0o3YVBxS3pLNHVYd2RFX3ZIQ3J1RVA1cE5HbF9mcaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFlCRGFSNVRCSlB4cFctMFBNN1RFQngxZllQOFN1Y0FWo2NpZNkgbTdqQ0RQYXFRQmhsTTNoUWxVWWJ4YVFEVFV4b0prSVc"><i
+						class="fas fa-user"></i> Iniciar sesión</a>
+				<a href="https://www.pxsol.com/registropxsol"><i class="fas fa-headset"></i> Hablar con ventas</a>
+				<a href="https://www.pxsol.com/"><i class="fas fa-globe"></i> ES</a>
+			</div>
+<!-- 			<div class="top-nav-items d-block d-sm-block mx-3 d-md-none text-center">
+				<a href="https://www.facebook.com/PXSOL/"><i class="fab fa-facebook-f"></i> </a>
+				<a href="https://www.instagram.com/pxsol/"><i class="fab fa-instagram"></i> </a>
+				<a href="https://www.linkedin.com/company/pxsol/"><i class="fab fa-linkedin-in"></i></a>
+				<a href="https://www.youtube.com/channel/UCoTRm0dWRP9ySGKXCwA5qQA"><i class="fab fa-youtube"></i> </a>
+			</div> -->
+
+		</div>
+		<div class="container">
+
+			<div class="wrapper">
+				<div class="header-item-left">
+				<h2>	<a style="margin-left:.5rem;" href="https://www.pxsol.com/" class="brand"><img width="120"
+								src="https://www.pxsol.com/hs-fs/hubfs/logo_fondo_transparene.png?width=180&name=logo_fondo_transparene.png"
+                                                                                         alt="Logo PXsol"></a> </h2>
+				</div>
+				<!-- Section: Navbar Menu -->
+				<div class="header-item-center">
+					<div class="overlay"></div>
+					<nav class="menu">
+
+						<div class="menu-mobile-header">
+							<button type="button" class="menu-mobile-arrow"><i
+									class="ion ion-ios-arrow-back"></i></button>
+							<div class="menu-mobile-title"></div>
+							<button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
+						</div>
+						<ul class="menu-section">
+							<li class="menu-item-has-children">
+								<a href="#">Productos <i class="ion ion-ios-arrow-down"></i></a>
+								<div class="menu-subs menu-mega menu-column-4 pri-mega-menu">
+									<div class="row w-100">
+										<h2>Nuestros Productos</h2>
+										<div class="col-md-6">
+											<a href="https://www.pxsol.com/motordereservashoteles?hsLang=es">
+												<span><i class="far fa-calendar"></i> Motor de Reservas</span>
+												<p>Consigue más reservas directas</p>
+											</a>
+											<a href="https://www.pxsol.com/channelmanagerhoteles?hsLang=es">
+												<span><i class="fas fa-compress-arrows-alt"></i> Channel Manager</span>
+												<p>Sincroniza tarifas y disponibilidad en más de 200 canales</p>
+											</a>
+											<a href="https://www.pxsol.com/crmhoteles?hsLang=es">
+												<span><i class="far fa-envelope"></i> CRM</span>
+												<p>Gestiona tus consultas automáticamente</p>
+											</a>
+										</div>
+										<div class="col-md-6">
+											<a href="https://www.pxsol.com/pmsparahoteles?hsLang=es">
+												<span><i class="fas fa-hotel"></i> PMS</span>
+												<p>Gestiona la administración de tu hotel</p>
+											</a>
+											<a href="https://www.pxsol.com/paginawebhoteles?hsLang=es">
+												<span><i class="far fa-window-restore"></i> Página Web</span>
+												<p>Tu página enfocada en enamorar al usuario y generar más ventas</p>
+											</a>
+											<a href="https://www.pxsol.com/hotelads?hsLang=es">
+												<span><i class="fas fa-ad"></i> Pxsol Ads</span>
+												<p>Publicidad online para tu hotel</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="https://www.pxsol.com/pricing-pxsol?hsLang=es">Precios</a></li>
+							<li class="menu-item-has-children">
+								<a href="#">Soluciones <i class="ion ion-ios-arrow-down"></i></a>
+								<div class="menu-subs menu-mega menu-column-4">
+									<div class="row w-100">
+										<h2>Nuestras Soluciones</h2>
+										<div class="col-md-6">
+											<a href="https://www.pxsol.com/aumentarlaocupacion?hsLang=es">
+												<span><i class="fas fa-arrow-up"></i> ¿Cómo aumentar la
+													ocupación?</span>
+												<p>8 pasos fundamentales para aumentar tu ocupación hoy</p>
+											</a>
+											<a href="https://www.pxsol.com/checkinonlinehoteles?hsLang=es">
+												<span><i class="fas fa-bezier-curve"></i> Web Check In</span>
+												<p>100% online - sencillo - seguro</p>
+											</a>
+											<a href="https://www.pxsol.com/google-travel?hsLang=es">
+												<span><i class="far fa-window-restore"></i> Google Hotel Travel</span>
+												<p>Enlaces gratuitos de reserva</p>
+											</a>
+										</div>
+										<div class="col-md-6">
+											<a href="https://www.pxsol.com/omnibox?hsLang=es">
+												<span><i class="fas fa-search"></i> Omnibox</span>
+												<p>Todo lo que necesitas para trabajar más rápido y fácil en tu hotel
+												</p>
+											</a>
+											<a href="https://www.pxsol.com/popups?hsLang=es">
+												<span><i class="far fa-clone"></i> Pop Ups</span>
+												<p>Mayor interacción y más ventas directas</p>
+											</a>
+                      <a href="https://www.pxsol.com/market_place">
+												<span><i class="fas fa-store"></i> Market Place</span>
+												<p>Un sitio web para agrupar toda tu oferta hotelera</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#">Recursos <i class="ion ion-ios-arrow-down"></i></a>
+								<div class="menu-subs menu-mega menu-column-4 ter-mega-menu">
+									<div class="row w-100">
+										<h2>Nuestros Recursos</h2>
+										<div class="col-md-6">
+											<a href="https://www.pxsol.com/webinars">
+												<span><i class="fas fa-user-friends"></i> Capacitaciones Gratuitas</span>
+												<p>Dictadas por especialistas en hotelería</p>
+											</a>
+											<a href="https://www.pxsol.com/demos?hsLang=es">
+												<span><i class="fas fa-desktop"></i> Demos Grabadas</span>
+												<p>Conoce nuestro sistema ahora</p>
+											</a>
+                      <a href="https://www.pxsol.com/blog?hsLang=es">
+												<span><i class="fas fa-th-large"></i> Blog</span>
+												<p>Información y consejos sobre hotelería</p>
+											</a>
+										</div>
+										<div class="col-md-6">
+											<a href="https://www.pxsol.com/actualizacionesdesistema?hsLang=es">
+												<span><i class="fas fa-undo-alt"></i> Updates</span>
+												<p>Actualizaciones y últimos lanzamientos</p>
+											</a>
+                      <a href="https://www.pxsol.com/ebooksdehoteleria">
+												<span><i class="fas fa-book"></i> E-books y Guías</span>
+												<p>100% gratuitos y descargables</p>
+											</a>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li class="bg-white botones-bottom-m">
+								<div class="d-block d-sm-block d-md-none">
+									<div class="row text-center dos-botones-mobile" style="white-space: nowrap;">
+										<div class="col-6">
+											<a
+												href="https://auth0.pxsol.com/u/login?state=hKFo2SBDS0dyRHJUalBFWm1kU1llbFdfTE9Zam01eWNod1lnNaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIDEwTDVFRURhLXRTQlpxUDFvSjN3RENEeWhwbjZQdjI1o2NpZNkgbTdqQ0RQYXFRQmhsTTNoUWxVWWJ4YVFEVFV4b0prSVc"><button
+													class="btn btn-outline-danger w-100" style="margin-left:.1rem;">Iniciar Sesión</button></a>
+										</div>
+										<div class="col-6">
+											<a href="https://www.pxsol.com/registropxsol" class="w-100"><button
+													class="btn btn-outline-danger">Hablar con ventas</button></a>
+										</div>
+										<div class="col-12 mt-3 text-center" style="text-align: center;">
+											<span class="hs-cta-wrapper"
+												id="hs-cta-wrapper-2dd81779-ba89-4d95-b358-76d2b2f5e179"><span
+													style="font-size: 19.2px; padding: 6px 12px;"
+													class="hs-cta-node hs-cta-2dd81779-ba89-4d95-b358-76d2b2f5e179"
+													id="hs-cta-2dd81779-ba89-4d95-b358-76d2b2f5e179">
+													<a
+														href="https://cta-redirect.hubspot.com/cta/redirect/7398646/2dd81779-ba89-4d95-b358-76d2b2f5e179"><img
+															class="hs-cta-img"
+															id="hs-cta-img-2dd81779-ba89-4d95-b358-76d2b2f5e179"
+															style="border-width:0px;"
+															src="https://no-cache.hubspot.com/cta/default/7398646/2dd81779-ba89-4d95-b358-76d2b2f5e179.png"
+															alt="Probar Pxsol Gratis" /></a>
+												</span>
+												<script charset="utf-8"
+													src="https://js.hscta.net/cta/current.js"></script>
+												<script
+													type="text/javascript"> hbspt.cta.load(7398646, '2dd81779-ba89-4d95-b358-76d2b2f5e179', { "region": "na1" });</script>
+											</span>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="d-none d-sm-none d-md-block pt-2 boton-derecha">
+					<span class="hs-cta-wrapper" id="hs-cta-wrapper-2dd81779-ba89-4d95-b358-76d2b2f5e179"><span
+							style="font-size: 19.2px; padding: 6px 12px;"
+							class="hs-cta-node hs-cta-2dd81779-ba89-4d95-b358-76d2b2f5e179"
+							id="hs-cta-2dd81779-ba89-4d95-b358-76d2b2f5e179">
+							<a
+								href="https://cta-redirect.hubspot.com/cta/redirect/7398646/2dd81779-ba89-4d95-b358-76d2b2f5e179"><img
+									class="hs-cta-img" id="hs-cta-img-2dd81779-ba89-4d95-b358-76d2b2f5e179"
+									style="border-width:0px;"
+									src="https://no-cache.hubspot.com/cta/default/7398646/2dd81779-ba89-4d95-b358-76d2b2f5e179.png"
+									alt="Probar Pxsol Gratis" /></a>
+						</span>
+						<script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+						<script
+							type="text/javascript"> hbspt.cta.load(7398646, '2dd81779-ba89-4d95-b358-76d2b2f5e179', { "region": "na1" });</script>
+					</span>
+				</div>
+
+				<div class="header-item-right padding">
+					<button type="button" class="menu-mobile-trigger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<!-- Section: Main -->
+<!-- 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script> -->
+	<script src="navbar.js" defer></script>
+	<!-- <script src="/app.js" defer></script> -->
+</body>
+
+</html>

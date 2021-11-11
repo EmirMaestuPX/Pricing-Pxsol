@@ -20,8 +20,12 @@
     <title>Hello, world!</title>
 </head>
 
+
 <body>
 
+    <div id="navbar">
+        
+    </div>
     <div class="container-fluid">
 
         <div class="container container-title text-center">
@@ -32,9 +36,11 @@
         </div>
         <div class="container">
 
-            <div class="radio">
-                <p>Seleccione su moneda: </p>
-                <input label="USD" class="pago shadow" type="radio" id="usd" name="price" value="opc" checked>
+            <div class="radio ">
+                <div class="container">
+                    <p>Seleccione su moneda: </p>
+                </div>
+                <input label="U$" class="pago shadow" type="radio" id="usd" name="price" value="opc" checked>
                 <input label="ARS" class="pago shadow" type="radio" id="ars" name="price" value="opc2">
             </div>
         </div>
@@ -44,15 +50,15 @@
                 <div class="col">
                     <div class="card mb-4 shadow-sm border-0 card-top-pricing">
                         <div class="card-header py-3 bg-white border-0">
-                            <h2 class="card-title pricing-card-title mt-4 price-one">$15<small class="">/mes</small>
+                            <h2 class="card-title pricing-card-title mt-4 price-one">$30<small class="">/mes</small>
                             </h2>
-                            <span>* +2% por reserva</span>
+                            <span><b style="color: #cc0303;">*</b> +2% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="my-0">Starter</h4>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Pago sólo por uso. Abona un mínimo fíjo más $1 por noche y agrega funcionalidades de
-                                    acuerdo a tus necesidades.</li>
+                                <li>Obtén lo básico para comenzar a recibir más reservas por un mínimo fijo más el 2%
+                                    por reserva procesada.</li>
                             </ul>
                             <div class="btn-pricing-top">
                                 <a href="https://www.pxsol.com/crearcuenta"><button type="button"
@@ -67,14 +73,13 @@
                         <div class="card-header py-3 bg-white border-0">
                             <h2 class="card-title pricing-card-title mt-4 price-full">$60<small class="">/mes</small>
                             </h2>
-                            <span>* +1% por reserva</span>
+                            <span><b style="color: #cc0303;">*</b> +1% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="my-0">Full</h4>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Un plan para perfeccionar tus herramientas comerciales abonando un fijo mensual más
-                                    un
-                                    variable acorde a tus ventas.</li>
+                                <li>Perfecciona tus herramientas comerciales abonando un fijo mensual más el 1% por
+                                    reserva procesada.</li>
                             </ul>
                             <div class="btn-pricing-top">
                                 <a href=""><button type="button" class="w-75 btn btn-outline-danger">OBTENER 14 DÍAS
@@ -89,13 +94,12 @@
                             <h3 class="text-end badge-popular"><span class="badge">MAS POPULAR</span></h3>
                             <h2 class="card-title pricing-card-title mt-4 price-pro">$120<small class="">/mes</small>
                             </h2>
-                            <span>* +0,5% por reserva</span>
+                            <span><b style="color: #cc0303;">*</b> +0,5% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="my-0">Professional</h4>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Abona un fijo mensual obteniendo toda nuestra tecnología, herramientas y un soporte
-                                    personalizado.</li>
+                                <li>Todo lo que necesita tu hotel para obtener más reservas, pagar menos comisiones y ahorrar horas en la gestión. Abonando un fijo mensual y sólo el 0,5% por reserva procesada.</li>
                             </ul>
                             <div class="btn-pricing-top">
                                 <a href="https://www.pxsol.com/crearcuenta"><button type="button"
@@ -110,13 +114,12 @@
                         <div class="card-header py-3 bg-white border-0">
                             <h2 class="card-title pricing-card-title mt-4 price-enter">$250<small class="">/mes</small>
                             </h2>
-                            <span>* +0% por reserva</span>
+                            <span><b style="color: #cc0303;">*</b> +0% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="my-0">Enterprise</h4>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Abona un fijo mensual obteniendo toda nuestra tecnología, herramientas y un soporte
-                                    personalizado.</li>
+                                <li>Al igual que con el Plan Professional, obtendrás la mejor tecnología, soporte y asesoramiento. Pero pagarás sólo un fijo sin importar las reservas que proceses.</li>
                             </ul>
                             <div class="btn-pricing-top">
                                 <a href="https://www.pxsol.com/crearcuenta"><button type="button"
@@ -134,17 +137,18 @@
                 <li class="col-4 card-li-container">
                     <div class="card text-dark mb-4 shadow-sm text-start p-4">
                         <div class="card-header bg-white border-0 py-3">
-                            <h2 class="card-title pricing-card-title price-one">$15<small
+                            <h2 class="card-title pricing-card-title price-one">$30<small
                                     class="text-muted">/mes</small></h2>
-                            <span>* +2% por reserva</span>
+                            <span><b style="color: #cc0303;">*</b> +2% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title pricing-card-title">Starter</h4>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Pago sólo por uso. Abona un mínimo fíjo más $1 por noche y agrega funcionalidades de
-                                    acuerdo a tus necesidades.</li>
+                                <li>Obtén lo básico para comenzar a recibir más reservas por un mínimo fijo más el 2%
+                                    por reserva procesada.</li>
                             </ul>
-                            <a href="https://www.pxsol.com/crearcuenta"><button style="font-size: .7rem; margin-bottom: 2.5rem;" type="button"
+                            <a href="https://www.pxsol.com/crearcuenta"><button
+                                    style="font-size: .7rem; margin-bottom: 2.5rem;" type="button"
                                     class="w-100 btn btn-outline-danger">OBTENER 14
                                     DÍAS
                                     GRATIS</button></a>
@@ -163,18 +167,18 @@
                         <div class="card-header bg-white border-0 py-3">
                             <h2 class="card-title pricing-card-title price-full">$60<small
                                     class="text-muted">/mes</small></h2>
-                            <span>* +1% por reserva</span>
+                            <span><b style="color: #cc0303;">*</b> +1% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title pricing-card-title">Full</h4>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Un plan para perfeccionar tus herramientas comerciales abonando un fijo mensual más
-                                    un variable acorde a tus ventas.</li>
+                                <li>Perfecciona tus herramientas comerciales abonando un fijo mensual más el 1% por reserva procesada.</li>
                             </ul>
-                            <a href="https://www.pxsol.com/crearcuenta"><button style="font-size: .7rem; margin-bottom: 2.5rem;" type="button"
-                                class="w-100 btn btn-outline-danger">OBTENER 14
-                                DÍAS
-                                GRATIS</button></a>
+                            <a href="https://www.pxsol.com/crearcuenta"><button
+                                    style="font-size: .7rem; margin-bottom: 2.5rem;" type="button"
+                                    class="w-100 btn btn-outline-danger">OBTENER 14
+                                    DÍAS
+                                    GRATIS</button></a>
                             <div class="text-center mb-3">
                                 <a style="color: #cc0303; text-decoration: none; font-size: .9rem;"
                                     class="btn-desple btn-desple-mobile">+ Mostrar características del plan</a>
@@ -191,18 +195,18 @@
                             <h3 class="text-end badge-popular"><span class="badge">MAS POPULAR</span></h3>
                             <h2 class="card-title pricing-card-title price-pro">$120<small
                                     class="text-muted">/mes</small></h2>
-                            <span>* +0,5% por reserva</span>
+                            <span><b style="color: #cc0303;">*</b> +0,5% por reserva</span>
                         </div>
                         <div class="card-body p-0">
                             <h4 class="card-title pricing-card-title">Professional</h4>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Abona un fijo mensual obteniendo toda nuestra tecnología, herramientas y un soporte
-                                    personalizado.</li>
+                                <li>Todo lo que necesita tu hotel para obtener más reservas, pagar menos comisiones y ahorrar horas en la gestión. Abonando un fijo mensual y sólo el 0,5% por reserva procesada.</li>
                             </ul>
-                            <a target="_blank" href="https://www.pxsol.com/crearcuenta"><button style="font-size: .7rem; margin-bottom: 2.5rem;" type="button"
-                                class="w-100 btn btn-danger">OBTENER 14
-                                DÍAS
-                                GRATIS</button></a>
+                            <a target="_blank" href="https://www.pxsol.com/crearcuenta"><button
+                                    style="font-size: .7rem; margin-bottom: 2.5rem;" type="button"
+                                    class="w-100 btn btn-danger">OBTENER 14
+                                    DÍAS
+                                    GRATIS</button></a>
                             <div class="text-center mb-3">
                                 <a style="color: #cc0303; text-decoration: none; font-size: .9rem;"
                                     class="btn-desple btn-desple-mobile">+ Mostrar características del plan</a>
@@ -218,18 +222,18 @@
                         <div class="card-header bg-white border-0 py-3">
                             <h2 class="card-title pricing-card-title price-enter">$250<small
                                     class="text-muted">/mes</small></h2>
-                            <span>* +0% por reserva</span>
+                            <span><b style="color: #cc0303;">*</b> +0% por reserva</span>
                         </div>
                         <div class="card-body">
                             <h4 class="card-title pricing-card-title">Enterprise</h4>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>Abona un fijo mensual obteniendo toda nuestra tecnología, herramientas y un soporte
-                                    personalizado.</li>
+                                <li>Al igual que con el Plan Professional, obtendrás la mejor tecnología, soporte y asesoramiento. Pero pagarás sólo un fijo sin importar las reservas que proceses.</li>
                             </ul>
-                            <a href="https://www.pxsol.com/crearcuenta"><button style="font-size: .7rem; margin-bottom: 2.5rem;" type="button"
-                                class="w-100 btn btn-outline-danger">OBTENER 14
-                                DÍAS
-                                GRATIS</button></a>
+                            <a href="https://www.pxsol.com/crearcuenta"><button
+                                    style="font-size: .7rem; margin-bottom: 2.5rem;" type="button"
+                                    class="w-100 btn btn-outline-danger">OBTENER 14
+                                    DÍAS
+                                    GRATIS</button></a>
                             <div class="text-center mb-3">
                                 <a style="color: #cc0303; text-decoration: none; font-size: .9rem;"
                                     class="btn-desple btn-desple-mobile">+ Mostrar características del plan</a>
@@ -258,15 +262,19 @@
                                 <li class="card-li-container">
                                     <div class="card border-0 text-dark mb-4 shadow-sm text-start">
                                         <div class="card-header bg-white border-0">
-                                            <h4 class="card-title pricing-card-title pt-5">Starter</h4>
-                                            <h2 class="card-title pricing-card-title price-one">$15<small
-                                                    class="text-muted">/mes</small></h2>
+                                            <h4 class="card-title pricing-card-title pt-5" style="margin-bottom: 0;">
+                                                Starter</h4>
+                                            <h2 class="card-title pricing-card-title small-card-price price-one"
+                                                style="margin-bottom: 0; ">$30<small class="text-muted">/mes</small>
+                                            </h2>
+                                            <span><b style="color: #cc0303;">*</b> +2% por reserva</span>
                                         </div>
-                                        <div class="card-body">
-                                            <a href="https://www.pxsol.com/crearcuenta"><button style="font-size: .7rem;" type="button"
-                                                class="w-100 btn btn-outline-danger">OBTENER 14
-                                                DÍAS
-                                                GRATIS</button></a>
+                                        <div class="card-body boton-card-desk">
+                                            <a href="https://www.pxsol.com/crearcuenta"><button
+                                                    style="font-size: .7rem; " type="button"
+                                                    class="w-100 btn btn-outline-danger">OBTENER 14
+                                                    DÍAS
+                                                    GRATIS</button></a>
                                         </div>
                                     </div>
                                 </li>
@@ -275,15 +283,19 @@
                                 <li class="card-li-container">
                                     <div class="card border-0 text-dark mb-4 shadow-sm text-start">
                                         <div class="card-header bg-white border-0">
-                                            <h4 class="card-title pricing-card-title pt-5">Full</h4>
-                                            <h2 class="card-title pricing-card-title price-full">$60<small
-                                                    class="text-muted">/mes</small></h2>
+                                            <h4 class="card-title pricing-card-title pt-5" style="margin-bottom: 0;">
+                                                Full</h4>
+                                            <h2 class="card-title pricing-card-title small-card-price price-full"
+                                                style="margin-bottom: 0;">$60<small class="text-muted">/mes</small></h2>
+                                            <span><b style="color: #cc0303;">*</b> +2% por reserva</span>
+
                                         </div>
-                                        <div class="card-body">
-                                            <a href="https://www.pxsol.com/crearcuenta"><button style="font-size: .7rem;" type="button"
-                                                class="w-100 btn btn-outline-danger">OBTENER 14
-                                                DÍAS
-                                                GRATIS</button></a>
+                                        <div class="card-body boton-card-desk">
+                                            <a href="https://www.pxsol.com/crearcuenta"><button
+                                                    style="font-size: .7rem;" type="button"
+                                                    class="w-100 btn btn-outline-danger">OBTENER 14
+                                                    DÍAS
+                                                    GRATIS</button></a>
                                         </div>
                                     </div>
                                 </li>
@@ -294,15 +306,19 @@
                                         <div class="card-header bg-white border-0">
                                             <h3 class="text-end badge-popular"><span class="badge">MAS POPULAR</span>
                                             </h3>
-                                            <h4 class="card-title pricing-card-title pt-5">Professional</h4>
-                                            <h2 class="card-title pricing-card-title price-pro">$120<small
-                                                    class="text-muted">/mes</small></h2>
+                                            <h4 class="card-title pricing-card-title pt-5" style="margin-bottom: 0;">
+                                                Professional</h4>
+                                            <h2 class="card-title pricing-card-title small-card-price price-pro"
+                                                style="margin-bottom: 0;">$120<small class="text-muted">/mes</small>
+                                            </h2>
+                                            <span><b style="color: #cc0303;">*</b> +0,5% por reserva</span>
                                         </div>
-                                        <div class="card-body">
-                                            <a href="https://www.pxsol.com/crearcuenta"><button style="font-size: .7rem;" type="button"
-                                                class="w-100 btn btn-danger">OBTENER 14
-                                                DÍAS
-                                                GRATIS</button></a>
+                                        <div class="card-body boton-card-desk">
+                                            <a href="https://www.pxsol.com/crearcuenta"><button
+                                                    style="font-size: .7rem;" type="button"
+                                                    class="w-100 btn btn-danger">OBTENER 14
+                                                    DÍAS
+                                                    GRATIS</button></a>
                                         </div>
                                     </div>
                                 </li>
@@ -311,15 +327,20 @@
                                 <li class="card-li-container">
                                     <div class="card border-0 text-dark mb-4 shadow-sm text-start">
                                         <div class="card-header bg-white border-0">
-                                            <h4 class="card-title pricing-card-title pt-5">Enterprise</h4>
-                                            <h2 class="card-title pricing-card-title price-enter">$250<small
-                                                    class="text-muted">/mes</small></h2>
+                                            <h4 class="card-title pricing-card-title pt-5" style="margin-bottom: 0;">
+                                                Enterprise</h4>
+                                            <h2 class="card-title pricing-card-title small-card-price price-enter"
+                                                style="margin-bottom: 0;">$250<small class="text-muted">/mes</small>
+                                            </h2>
+                                            <span><b style="color: #cc0303;">*</b> 0% por reserva</span>
+
                                         </div>
-                                        <div class="card-body">
-                                            <a href="https://www.pxsol.com/crearcuenta"><button style="font-size: .7rem;" type="button"
-                                                class="w-100 btn btn-outline-danger">OBTENER 14
-                                                DÍAS
-                                                GRATIS</button></a>
+                                        <div class="card-body boton-card-desk">
+                                            <a href="https://www.pxsol.com/crearcuenta"><button
+                                                    style="font-size: .7rem;" type="button"
+                                                    class="w-100 btn btn-outline-danger">OBTENER 14
+                                                    DÍAS
+                                                    GRATIS</button></a>
                                         </div>
                                     </div>
                                 </li>
@@ -331,14 +352,14 @@
                             <td colspan="5" class="sep">PMS</td>
                         </tr>
                         <tr>
-                            <td>Cargar reservas</td>
+                            <td>Plano de ocupación</td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr>
-                            <td>Importar reservas</td>
+                            <td>Registro de pagos</td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
@@ -359,7 +380,7 @@
                         </tr>
 
                         <tr class="child-row1 features border-bottom" style="display: none;">
-                            <td>Plano de ocupación</td>
+                            <td>Cargar reservas</td>
                             <td><span><i class="fas fa-check"></i></span></td>
                             <td><span><i class="fas fa-check"></i></span></td>
                             <td><span><i class="fas fa-check"></i></span></td>
@@ -373,7 +394,7 @@
                             <td><span><i class="fas fa-check"></i></span></td>
                         </tr>
                         <tr class="child-row1 features border-bottom" style="display: none;">
-                            <td>Registro de pagos</td>
+                            <td>Importar reservas</td>
                             <td><span><i class="fas fa-check"></i></span></td>
                             <td><span><i class="fas fa-check"></i></span></td>
                             <td><span><i class="fas fa-check"></i></span></td>
@@ -412,28 +433,6 @@
                             <td colspan="5" class="sep">Motor de reservas</td>
                         </tr>
                         <tr>
-                            <td>Tarifario <a type="button" class="text-danger" data-bs-toggle="popover"
-                                    data-bs-trigger="hover focus"
-                                    data-bs-content="Configura diferentes tarifas para satisfacer las necesidades de más huéspedes"><i
-                                        class="far fa-question-circle"></i></a></td>
-                            <td>
-                                <i class="fas fa-check"></i>
-                                <p>*Hasta 8</p>
-                            </td>
-                            <td>
-                                <i class="fas fa-check"></i>
-                                <p>*Hasta 8</p>
-                            </td>
-                            <td>
-                                <i class="fas fa-check"></i>
-                                <p>*Hasta 8</p>
-                            </td>
-                            <td>
-                                <i class="fas fa-check"></i>
-                                <p>*Hasta 8</p>
-                            </td>
-                        </tr>
-                        <tr>
                             <td>Promociones, paquetes y vouchers <a type="button" class="text-danger"
                                     data-bs-toggle="popover" data-bs-trigger="hover focus"
                                     data-bs-content="Configura y edita promociones para volver más atractiva tu oferta y concretar más reservas."><i
@@ -444,14 +443,39 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr>
-                            <td>Medios de pago <a type="button" class="text-danger" data-bs-toggle="popover"
-                                    data-bs-trigger="hover focus"
-                                    data-bs-content="Ofrece a tus huéspedes múltiples formas de pago al reservar."><i
+                            <td>Comparador de precios con las OTAs <a type="button" class="text-danger"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-content="Los usuarios podrán visualizar los precios en tu motor. Así estarán seguros de que la reserva directa es más barata.."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                        <tr>
+                            <td>Web Check In <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="Posibilidad de que tus huéspedes realicen el check in de manera online, sencilla y segura."><i
+                                        class="far fa-question-circle"></i></a></td>
+                            <td>
+                                <i class="fas fa-check"></i>
+                                <p>*Escaneo inteligente: adicional U$0.10/documento</p>
+                            </td>
+                            <td>
+                                <i class="fas fa-check"></i>
+                                <p>*Escaneo inteligente: adicional U$0.10/documento</p>
+                            </td>
+                            <td>
+                                <i class="fas fa-check"></i>
+                                <p>*Escaneo inteligente: adicional U$0.10/documento</p>
+                            </td>
+                            <td>
+                                <i class="fas fa-check"></i>
+                                <p>*Escaneo inteligente: adicional U$0.10/documento</p>
+                            </td>
                         </tr>
                         <tr class="parent features" id="row2" title="Click to expand/collapse" style="cursor: pointer;">
                             <td class="view-btn pt-3 pushme sep border-0"
@@ -479,36 +503,36 @@
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr class="child-row2 features border-bottom" style="display: none;">
-                            <td>Comparador de precios con las OTAs <a type="button" class="text-danger"
-                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
-                                    data-bs-content="Los usuarios podrán visualizar los precios en tu motor. Así estarán seguros de que la reserva directa es más barata.."><i
+                            <td>Tarifario <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="Configura diferentes tarifas para satisfacer las necesidades de más huéspedes"><i
                                         class="far fa-question-circle"></i></a></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
+                            <td>
+                                <i class="fas fa-check"></i>
+                                <p>*Hasta 8</p>
+                            </td>
+                            <td>
+                                <i class="fas fa-check"></i>
+                                <p>*Hasta 8</p>
+                            </td>
+                            <td>
+                                <i class="fas fa-check"></i>
+                                <p>*Hasta 8</p>
+                            </td>
+                            <td>
+                                <i class="fas fa-check"></i>
+                                <p>*Hasta 8</p>
+                            </td>
                         </tr>
                         <tr class="child-row2 features border-bottom" style="display: none;">
-                            <td>Web Check In <a type="button" class="text-danger" data-bs-toggle="popover"
+                            <td>Medios de pago <a type="button" class="text-danger" data-bs-toggle="popover"
                                     data-bs-trigger="hover focus"
-                                    data-bs-content="Posibilidad de que tus huéspedes realicen el check in de manera online, sencilla y segura."><i
+                                    data-bs-content="Ofrece a tus huéspedes múltiples formas de pago al reservar."><i
                                         class="far fa-question-circle"></i></a></td>
-                            <td>
-                                <i class="fas fa-check"></i>
-                                <p>*Escaneo inteligente: adicional U$0.10/documento</p>
-                            </td>
-                            <td>
-                                <i class="fas fa-check"></i>
-                                <p>*Escaneo inteligente: adicional U$0.10/documento</p>
-                            </td>
-                            <td>
-                                <i class="fas fa-check"></i>
-                                <p>*Escaneo inteligente: adicional U$0.10/documento</p>
-                            </td>
-                            <td>
-                                <i class="fas fa-check"></i>
-                                <p>*Escaneo inteligente: adicional U$0.10/documento</p>
-                            </td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr class="child-row2 features border-bottom" style="display: none;">
                             <td>Moneda automática por país del visitante <a type="button" class="text-danger"
@@ -592,13 +616,13 @@
                                     data-bs-trigger="hover focus"
                                     data-bs-content="Un especialista a tu disposición para ayudarte a optimizar tu diseño y estilo de tu sitio."><i
                                         class="far fa-question-circle"></i></a></td>
-                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-times"></i></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
                         </tr>
                         <tr>
-                            <td>Pestañas o secciones de tu web optimizada <a type="button" class="text-danger"
+                            <td>Pestañas o secciones de tu <br> web optimizada <a type="button" class="text-danger"
                                     data-bs-toggle="popover" data-bs-trigger="hover focus"
                                     data-bs-content="Cantidad de pestañas totales en la página."><i
                                         class="far fa-question-circle"></i></a></td>
@@ -608,9 +632,9 @@
                             <td style="font-size: 1.2rem;">12</td>
                         </tr>
                         <tr>
-                            <td>Google Analytics / Tag Mannager <a type="button" class="text-danger"
-                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
-                                    data-bs-content="Vincula tu sitio con estas herramientas y analiza todo lo que ocurre en tu web."><i
+                            <td>Web mobile <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="Tu página adaptada a todos los dispositivos."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
@@ -623,9 +647,9 @@
                                 + Mostrar más</td>
                         </tr>
                         <tr class="child-row4 features border-bottom" style="display: none;">
-                            <td>Web mobile <a type="button" class="text-danger" data-bs-toggle="popover"
-                                    data-bs-trigger="hover focus"
-                                    data-bs-content="Tu página adaptada a todos los dispositivos."><i
+                            <td>Google Analytics / Tag Mannager <a type="button" class="text-danger"
+                                    data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                    data-bs-content="Vincula tu sitio con estas herramientas y analiza todo lo que ocurre en tu web."><i
                                         class="far fa-question-circle"></i></a></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
@@ -787,38 +811,6 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Plantillas de correo <a type="button" class="text-danger" data-bs-toggle="popover"
-                                    data-bs-trigger="hover focus"
-                                    data-bs-content="Para que no pierdas tiempo en el envío de mails, trabaja con plantillas ya establecidas."><i
-                                        class="far fa-question-circle"></i></a></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Gestión de contactos</td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr class="parent features" id="row6" title="Click to expand/collapse" style="cursor: pointer;">
-                            <td class="view-btn pt-3 pushme sep border-0"
-                                style="text-transform: none; font-weight: 400; font-size: 1.1rem; color: #5096F1;">
-                                + Mostrar más</td>
-                        </tr>
-                        <tr class="child-row6 features" style="display: none;">
-                            <td>Generador de presupuestos <a type="button" class="text-danger" data-bs-toggle="popover"
-                                    data-bs-trigger="hover focus"
-                                    data-bs-content="Cuando entre una consulta a tu bandeja de entrada, podrás enviar, de manera automática la respuesta con tus tarifas en tiempo real."><i
-                                        class="far fa-question-circle"></i></a></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                            <td><i class="fas fa-check"></i></td>
-                        </tr>
-                        <tr class="child-row6 features" style="display: none;">
                             <td>Email marketing <a type="button" class="text-danger" data-bs-toggle="popover"
                                     data-bs-trigger="hover focus"
                                     data-bs-content="Crea campañas por correo que lleguen a toda tu base de datos."><i
@@ -840,11 +832,43 @@
                                 <p>*adicional U$0.003/email</p>
                             </td>
                         </tr>
-                        <tr class="child-row6 features" style="display: none;">
+                        <tr>
                             <td>Encuestas de satisfacción y NPS <a type="button" class="text-danger"
                                     data-bs-toggle="popover" data-bs-trigger="hover focus"
                                     data-bs-content="Envía encuestas a tus huéspedes para saber qué opinan de tus servicios para mejorar en aspectos negativos y resaltar los positivos."><i
                                         class="far fa-question-circle"></i></a></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr class="parent features" id="row6" title="Click to expand/collapse" style="cursor: pointer;">
+                            <td class="view-btn pt-3 pushme sep border-0"
+                                style="text-transform: none; font-weight: 400; font-size: 1.1rem; color: #5096F1;">
+                                + Mostrar más</td>
+                        </tr>
+                        <tr class="child-row6 features" style="display: none;">
+                            <td>Generador de presupuestos <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="Cuando entre una consulta a tu bandeja de entrada, podrás enviar, de manera automática la respuesta con tus tarifas en tiempo real."><i
+                                        class="far fa-question-circle"></i></a></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr class="child-row6 features" style="display: none;">
+                            <td>Plantillas de correo <a type="button" class="text-danger" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="Para que no pierdas tiempo en el envío de mails, trabaja con plantillas ya establecidas."><i
+                                        class="far fa-question-circle"></i></a></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr class="child-row6 features" style="display: none;">
+                            <td>Gestión de contactos</td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
@@ -897,11 +921,11 @@
                             <td>Capacitaciones 1 a 1</td>
                             <td>
                                 <i class="fas fa-times"></i>
-                                <p>*Bonificadas el primer mes. Después U$D 10 por hora.</p>
+                                <p>*Bonificadas el primer mes. Después U$ 10 por hora.</p>
                             </td>
                             <td>
                                 <i class="fas fa-times"></i>
-                                <p>*Bonificadas el primer mes. Después U$D 10 por hora.</p>
+                                <p>*Bonificadas el primer mes. Después U$ 10 por hora.</p>
                             </td>
                             <td><i class="fas fa-check"></i></td>
                             <td><i class="fas fa-check"></i></td>
@@ -1022,7 +1046,7 @@
             </div>
         </div>
         <div class="container preguntas-fre">
-            <h2>Preguntas frecuentes</h2>
+            <h2 class="mb-5 pt-5">Preguntas frecuentes</h2>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -1080,14 +1104,32 @@
                         <button class="accordion-button collapsed" style="font-size: 1.1rem;" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                             aria-controls="collapseFour">
-                            ¿Cómo sé qué plan se adapta más a mis necesidades?
+                            ¿Cuáles son los medios de pago disponibles?
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body text-start text-muted mx-2">
-                            Puedes realizar tus pagos con tarjeta a través de Stripe en ambos planes. O con
+                            Puedes realizar tus pagos con tarjeta a través de Stripe en todos los planes. O con
                             transferencia bancaria en el plan Professional.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" style="font-size: 1.1rem;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            ¿Sobre qué reservas aplica el porcentaje?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start text-muted mx-2">
+                            Ya que utilizarás Pxsol para gestionar tus reservas, el porcentaje variable de cada plan
+                            aplica sobre todas las reservas que pasen por el sistema. Ya sean reservas generadas por el
+                            motor de reservas, cargadas manualmente, generadas por una OTA conectada al channel manager
+                            (Ej: Booking.com), etc.
                         </div>
                     </div>
                 </div>
@@ -1096,7 +1138,7 @@
         <div class="container mt-5 pt-5">
             <div class="contacto-home text-center">
                 <div class="subtitulos-home mb-5">
-                    <h2>Comienza ahora</h2>
+                    <h2 class="mb-5 pt-5">Comienza ahora</h2>
                 </div>
                 <div class="formulario-contacto-home " style="margin: 0 auto;">
                     <h2>Solicitá <b>gratis</b> una demostración</h2>
@@ -1113,6 +1155,7 @@
             </div>
         </div>
     </div>
+    <div id="footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

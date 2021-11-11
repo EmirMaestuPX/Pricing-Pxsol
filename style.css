@@ -7,6 +7,10 @@
 .btn-outline-danger:hover{
     background-color: #cc0303;
 }
+.btn-outline-danger{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
 .fa-check{
     color: #5096F1;
     font-size: 1.2rem;
@@ -36,7 +40,7 @@
     padding-top: 10rem;
     color: #cc0303;
     font-size: 3.5rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 .container-title p{
     font-size: 1.5rem;
@@ -48,13 +52,13 @@
 }
 .table-pricing-top .col:nth-child(3){
     margin-top: -1rem;
-    height: 500px;
+    height: 550px;
 }
 .table-pricing-top button{
     font-size: .8rem;
 }
 ul {
-    display: flex;
+    /* display: flex; */
     top: 0px;
     z-index: 10;
     padding-bottom: 14px;
@@ -277,6 +281,12 @@ td p{
     color: #a5a5a5;
     font-size: 1.5rem;
 }
+.card-header h2 small p{
+    font-size: .9rem;
+}
+.small-card-price small{
+    font-size: 1rem!important;
+}
 .card-body {
     white-space: initial !important;
 }
@@ -291,7 +301,7 @@ td p{
     font-weight: 300;
 }
 .card-top-pricing{
-    height: 450px;
+    height: 500px;
 }
 .badge-popular{
     position: absolute;
@@ -387,6 +397,12 @@ td p{
         margin-top: 2rem;
         margin-bottom: 1rem;
     }
+    .preguntas-fre{
+        padding: 0!important;
+    }
+    .contacto-home {
+        padding: 0!important;
+    }
 }
 .preguntas-fre{
     text-align: center;
@@ -398,6 +414,7 @@ td p{
 .preguntas-fre h2{
     color: #cc0303;
     font-size: 2.3rem;
+    font-weight: 700;
 }
 .accordion-button{
     background-color: #f9f9f9;
@@ -429,6 +446,7 @@ td p{
 }
 .contacto-home h2 {
     color: #cc0303;
+    font-weight: 700;
 }
 .subtitulos-home h2{
     font-size: 2.3rem;
@@ -441,3 +459,11 @@ td p{
 .formulario-contacto-home h2 b {
     color: #cc0303;
 }
+.boton-card-desk{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+

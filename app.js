@@ -83,15 +83,20 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 $('input[type=radio]').click(function (event) {
     var valor = $(event.target).val();
     if (valor == 'opc') {
-        $('.price-one').html('$15 <small class="">/mes</small>');
+        $('.price-one').html('$30 <small class="">/mes</small>');
         $('.price-full').html('$60 <small class="">/mes</small>');
         $('.price-pro').html('$120 <small class="">/mes</small>');
         $('.price-enter').html('$250 <small class="">/mes</small>');
     } else if (valor == 'opc2') {
-        $('.price-one').html('$3000 <small class="">/mes</small>');
-        $('.price-full').html('$1200 <small class="">/mes</small>');
-        $('.price-pro').html('$24000 <small class="">/mes</small>');
-        $('.price-enter').html('$50000 <small class="">/mes</small>');
+        $('.price-one').html('$6000 <small class="">/mes <span>+IVA</span></small>');
+        $('.price-full').html('$12000 <small class="">/mes <span>+IVA</span></small>');
+        $('.price-pro').html('$24000 <small class="">/mes <span>+IVA</span></small>');
+        $('.price-enter').html('$50000 <small class="">/mes <span>+IVA</span></small>');
     }
 });
 
+$(document).ready(() => {
+    $('#navbar').load('navbar.html')
+    $('#footer').load('footer.html')
+
+})
