@@ -188,7 +188,7 @@ td p{
         z-index: 1;
     }
     .table-pricing-top .col:nth-child(4){
-        margin-left: -2rem;
+        margin-left: -.5rem;
         margin-top: 2rem;
     }
     .formulario-contacto-home{
